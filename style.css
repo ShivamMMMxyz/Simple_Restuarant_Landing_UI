@@ -1,0 +1,157 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5c4033;
+    color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #3e2723;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #ffcc80;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    flex-wrap: wrap;
+
+}
+.hero-text h2 {
+    font-size: 2.5rem;
+    transition: 1s ease;
+}
+.hero-text p {
+    margin: 10px 0;
+    font-size: 2.0rem;
+}
+.hero-text button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff9800;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.hero-text button:hover {
+    background-color: #e65100;
+}
+.hero-image img {
+    max-width: 400px;
+    border-radius: 10px;
+    /* gap: 200px; */
+      margin-right: 50px;
+}
+
+/* Menu Section */
+.menu {
+    padding: 40px;
+    text-align: center;
+}
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.menu-card {
+    background-color: #4e342e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+.menu-card:hover {
+    transform: scale(1.05);
+    background-color: #6d4c41;
+}
+
+/* Order Form Section */
+.order {
+    padding: 40px;
+    text-align: center;
+}
+.order form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    gap: 15px;
+}
+.order input, .order select, .order button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.order button {
+    background-color: #ff9800;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.order button:hover {
+    background-color: #e65100;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px;
+    text-align: center;
+}
+.contact-info p {
+    margin: 8px 0;
+}
+.map {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #3e2723;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image img {
+        margin-top: 20px;
+    }
+}
